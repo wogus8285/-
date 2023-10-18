@@ -148,7 +148,7 @@ body{
 }
 
 /*  나 밑에 코드 망함 */
-/* 리플래쉬를 안해서 그런거였음 */
+/* 웹사이트의 리플래쉬를 안해서 그런거였음 */
 .tab .notice_list li a:hover span:first-child {
     text-decoration: underline;
 }
@@ -157,14 +157,25 @@ body{
     display: none;
 }
 
+.banner , .link {
+    position: relative;
+}
 
 .banner img , .link img {
     width: 390px;
     height: 180px;
     display: block;
     object-fit: cover;
+    /* position: relative; */
 }
 
+.banner h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: red;
+}
 
 
 /* 푸터 */
