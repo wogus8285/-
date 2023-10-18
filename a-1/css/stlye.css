@@ -148,7 +148,8 @@ body{
 }
 
 /*  나 밑에 코드 망함 */
-.tab .notice_list li a:hover span:nth-child(1) {
+/* 리플래쉬를 안해서 그런거였음 */
+.tab .notice_list li a:hover span:first-child {
     text-decoration: underline;
 }
 
