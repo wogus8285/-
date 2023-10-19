@@ -28,6 +28,8 @@ body{
 
 /* 헤더 */
 .header{
+    position: relative;
+    z-index: 1;
     height: 100px;
     display: flex;
     align-items: center;
@@ -73,10 +75,11 @@ body{
 /* slider */
 .slider {
     height: 300px;
+    overflow: hidden;
 }
 
 .slides {
-    display: flex;
+    /* display: flex; */
 
 }
 
@@ -137,6 +140,10 @@ body{
     padding: 10px;
 }
 
+.item{
+    display: none;
+}
+
 
 .tab .notice_list li a{
     padding: 4px 0;
@@ -169,12 +176,18 @@ body{
     /* position: relative; */
 }
 
-.banner h2{
+.banner h2 , .link h2{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: red;
+    color: #eee;
+    font-weight: bold ;
+    text-decoration:underline;
+    width: 100%;
+    text-align: center;
+    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.7);
+
 }
 
 

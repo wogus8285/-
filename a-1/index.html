@@ -6,7 +6,7 @@
     <title>Just 쇼핑몰</title>
     <link rel="stylesheet" href="./css/stlye.css">
     <script src="./script/jquery-1.12.4.js"></script>
-
+    <script src="./script/main.js"></script>
 
 </head>
 <body>
@@ -107,10 +107,11 @@
             </div>
             <div class="banner">
                 <a href="#"><img src="./images/배너 이미지/banner.jpg" alt="쇼핑몰 배너"></a>
-                <h2>hello world</h2>
+                <h2>전국 최저가 도전!!</h2>
             </div>
             <div class="link">
                 <a href="#"><img src="./images/바로가기 이미지/direct.jpg" alt="바로가기"></a>
+                <h2>오늘이 마지막 할인!</h2>
             </div>
         </div>
 
@@ -135,11 +136,70 @@
     </div>
 
 
-    <!-- 제이커리 잘 연결 됐는지, 확인하는 절차. -->
+
+
+<!-- 제이커리 잘 연결 됐는지, 확인하는 절차. -->
     <script>
         console.log($)
     </script>
 
+<!--gnb  -->
+    <script>
+        $('.gnb').hover(
+            function(){
+                $(this).find('ul').stop().slideDown()
+            },
+            function(){
+                $(this).find('ul').stop().slideUp()
+            },
+        )
+    </script>
+
+<!-- 슬라이드 -->
+    <script>
+       setInterval(function(){
+        $('.slides').animate({top: '-100%'}, function(){
+            $('.slide').first().appendTo('.slides')
+            $(this).css('top', 0)
+        })
+    }, 3000)
+    </script>
+
+<!-- 보드 -->
+    <script>
+    $('.item').eq(0).show()
+
+$('.titles h3').click(function(){            
+    var idx =  $(this).index()
+    
+    $('.titles h3').removeClass('active')
+    $(this).addClass('active')
+
+    $('.item').hide()
+    $('.item').eq(idx).show()       
+})
+
+</script>
+
+
+<!-- moadal -->
+    <script>
+         $('#showModal').click(function(){
+        $('.modal').show()
+    })
+    
+    $('#closeModal').click(function(){
+        $('.modal').hide()
+    })    
+
+    </script>
+
+<!-- 안보고 실패  -->
+    <!-- <script>
+        .click('.gnb')function(){
+            $('.gnb ul')show
+        }
+    </script> -->
 
 </body>
 </html>
