@@ -36,21 +36,6 @@ body{
     justify-content: space-between;
 }
 
-.header::after{
-    content: '';
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    height: 00px;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: all 1s;
-}
-
-.header.active::after{
-    height: 200px;
-}
-
 .gnb ul a:hover{background-color: #666;}
 .gnb > li > a:hover{color: orangered;}
 
@@ -60,7 +45,6 @@ body{
 
 .gnb > li {
     position: relative;
-    z-index: 2;
 }
 
 .gnb > li > a {
@@ -77,10 +61,8 @@ body{
     left: 0;
     width: 100%;
     text-align: center;
-    /* background-color: #eee; */
+    background-color: #eee;
     display: none;
-    color: #fff
-    ;
 }
 
 .gnb ul li a{

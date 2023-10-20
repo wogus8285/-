@@ -147,12 +147,10 @@
     <script>
         $('.gnb').hover(
             function(){
-                $('.header').addClass('active')
-                $(this).find('ul').stop().slideDown(1000)
+                $(this).find('ul').stop().slideDown()
             },
             function(){
-                $('.header').removeClass('active')
-                $(this).find('ul').stop().slideUp(1000)
+                $(this).find('ul').stop().slideUp()
             },
         )
     </script>
