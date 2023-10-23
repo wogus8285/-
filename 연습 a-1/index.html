@@ -184,10 +184,21 @@
 
 <!-- 보더 -->
     <script>
+        $('.gallery_list').hide()
+
         $('.titles h2').click(function(){
             $('.titles h2').removeClass('active')
             $(this).addClass('active')
+        
+            var idx = $(this).index()
+
+            $('.item').hide()
+            $('.item').eq(idx).show()
         })
+
+
+
+
     </script>
 
 

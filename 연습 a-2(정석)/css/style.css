@@ -69,6 +69,22 @@ h2{
     z-index: 2;
 }
 
+.gnb li:first-child ul{
+    background-color: rgba(20, 20, 20, 0.7);
+    width: 666.5px;
+    height: 211.52px;
+    position: absolute;
+    top: 100px;
+    left: -532.5px;
+}
+
+.gnb li:first-child ul li{
+    width: 134px;
+    margin-left: 532.5px;
+    /* padding-left: 50.5px; */
+}
+
+
 .gnb ul{
     display: none;
     position: absolute;
@@ -134,7 +150,7 @@ h2{
 }
 
 .contents > div > a img {
-    width: 394px;
+    width: 388px;
     height: 180px;
 }
 
@@ -167,7 +183,7 @@ h2{
 .titles h2{
     font-weight: normal;
     font-size: 15px;
-    width: 190px;
+    width: 192px;
     background-color: #ddd;
     text-align: center;
     line-height: 40px;
@@ -207,7 +223,7 @@ h2{
 
 /* 계산미스 수정하기 */
 .gallery_list ul img{
-    display: none;
+    /* display: none; */
     width: 120px;    
 }
 
@@ -251,6 +267,7 @@ h2{
     transform: translate(-50% , -50%);
     padding: 30px;
     line-height: 2.1;
+    display: none;
 }
 
 .modal h3{
