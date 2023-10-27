@@ -153,11 +153,36 @@
         // 지엔비
         var gnb = $('.gnb')
 
+        gnb.hover(function(){
+            $(this).find('ul').stop().slideDown()
+        },
+        function(){
+            $(this).find('ul').stop().slideUp()
+        }
+        )
+
+
         // 슬라이드
         
         var slider = $('.slider')
         var slides = $('.slides')
-        var slide = $('.slide')
+        
+        // setInterval(function(){
+        //     var slide = $('.slide')
+        //     //변수가  세트인터벌 밖에 있으니까 계속 초기화가 되었다.....
+        //     slides.animate({top : '-100%'}, function(){
+        //         slide.first().appendTo($(this))
+        //         $(this).css('top' , 0)
+        //      })
+        // } ,1000)
+      
+        setInterval(function(){
+            slides.animate({top : '-100%'},
+            function(){
+                slide.first().appendTo($(this))
+                $(this).css('top' , 0)
+            })
+        } , 1000)
       
      
 
@@ -169,15 +194,21 @@
         h2.click(function(){
             h2.removeClass('active')
             $(this).addClass('active')
-       
-            var idx = $(this).index()
+
+            var i = $(this).index()
 
             $('.item').hide()
-            $('.item').eq(idx).show()
+            $('.item').eq(i).show()
         })
 
 
-        
+
+
+
+
+
+
+
 
         // 슬라이드... 음냐... 좋은 시도였으나... 사실 좋은 시도였는지도 모르겠다고 한다.
         //     var i = 0
@@ -204,12 +235,12 @@
 
 
 
-//         setInterval(function(){
-//             $('.slides').animate({top: '-100%'}, function(){
-//                 $('.slide').first().appendTo($(this))
-//                 $(this).css('top', 0)
-//             })            
-//         }, 3000)
+        // setInterval(function(){
+        //     $('.slides').animate({top: '-100%'}, function(){
+        //         $('.slide').first().appendTo($(this))
+        //         $(this).css('top', 0)
+        //     })            
+        // }, 3000)
 
 
 
