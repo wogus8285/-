@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해운대빛축제</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/mian.js"></script>
+    <script src="./script/jquery-1.12.3.js"></script>
+
+
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="header">
+            <div class="logo">
+                <a href="#"><img src="./images/footerLogo.png" alt="해운대빛축제 로고"></a>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">협회소개</a>
+                    <ul>
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">명인</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">행사안내</a>
+                    <ul>
+                        <li><a href="#">행사일정표</a></li>
+                        <li><a href="#">초대가수</a></li>
+                        <li><a href="#">행사행사</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">홍보마당</a>
+                    <ul>
+                        <li><a href="#">홍보홍보</a></li>
+                        <li><a href="#">마당마당</a></li>
+                        <li><a href="#">홍마홍마</a></li>
+                        <li><a href="#">보당보당</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회원마당</a>
+                    <ul>
+                        <li><a href="#">회원회원</a></li>
+                        <li><a href="#">마당마당</a></li>
+                        <li><a href="#">회마원당</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <a href="#"><img src="./images/img1.jpg" alt="해운대빛축제1"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#"><img src="./images/img2.jpg" alt="해운대빛축제2"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#"><img src="./images/img3.jpg" alt="해운대빛축제3"></a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="contents">
+                <div class="board">
+                    <div class="titles">
+                        <h2>공지사항</h2>
+                        <h2>갤러리</h2>
+                    </div>
+                    <div class="notice_list item">
+                        <a href="#">해변에서 펼쳐지는 노래공연	<span>2020.11.09</span></a>
+                        <a href="#">바다의 야경과 빛공연 관람하기	<span>2020.11.09</span></a>
+                        <a href="#">불꽃놀이 이벤트를 신청하세요	<span>2020.11.09</span></a>
+                        <a href="#">빛축제 단체관람 안내	<span>2020.11.09</span></a>
+                    </div>
+                    <div class="gallery_list item">
+                        <a href="#"><img src="./images/icon1.jpg" alt="갤러리리스트의 사진입니다."></a>
+                        <a href="#"><img src="./images/icon2.jpg" alt="갤러리리스트의 사진입니다."></a>
+                        <a href="#"><img src="./images/icon3.jpg" alt="갤러리리스트의 사진입니다."></a>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <a href="#"><img src="./images/banner.jpg" alt=""></a>
+                </div>
+
+                <div class="link">
+                    <a href="#"><img src="./images/direct.jpg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="f_logo"><a href="#"><img src="./images/footerLogo.png" alt="#"></a></div>
+                <div class="f_right">
+                    <div class="f_menu">
+                        <div class="#"><a href="#">하단메뉴1</a></div>
+                        <div class="#"><a href="#">하단메뉴2</a></div>
+                        <div class="#"><a href="#">하단메뉴3</a></div>
+                    </div>
+                    <div class="copyright">
+                        COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $('.gnb > li').hover(function(){
+            $(this).find('ul').stop().slideDown()
+        },
+        function(){
+            $(this).find('ul').stop().slideUp()
+        })
+    </script>
+
+</body>
+</html>
