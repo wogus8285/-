@@ -115,12 +115,23 @@
     </div>
     
     <script>
+        $('.gnb ul').hide()
+
         $('.gnb > li').hover(function(){
-            $(this).find('ul').stop().slideDown()
+            $(this).find('ul').show()
         },
         function(){
-            $(this).find('ul').stop().slideUp()
+            $(this).find('ul').hide()
         })
+
+        setInterval(function(){
+            $('.slides').animate({left: '-100%'},
+            function(){
+                $('.slide').first().appendTo(this)
+                $(this).css('left' , '0')
+            })
+        },3000)
+
     </script>
 
 </body>
