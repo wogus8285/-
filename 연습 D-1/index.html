@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조이컨트리클럽</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/jquery-1.12.4.js"></script>
+    <script src="./script/main.js"></script>
+
+
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="container">
+            <div class="header">
+                <div class="logo"><a href="#"><img src="./images/logo.png" alt="#"></a></div>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">CLUB</a>
+                        <ul>
+                            <li><a href="#">클럽소개</a></li>
+                            <li><a href="#">시설안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">BOOKING</a>
+                        <ul>
+                            <li><a href="#">요금안내</a></li>
+                            <li><a href="#">예약안내</a></li>
+                            <li><a href="#">위약안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">INFORMATION</a>
+                        <ul>
+                            <li><a href="#">명예의 전당</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">포토갤러리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">COMMUNITY</a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><a href="#"><img src="./images/img1.jpg" alt=""></a></div>
+                        <div class="slide"><a href="#"><img src="./images/img2.jpg" alt=""></a></div>
+                        <div class="slide"><a href="#"><img src="./images/img3.jpg" alt=""></a></div>
+                    </div>
+                </div>
+                
+                <div class="banner">
+                    <a href="#"><img src="./images/banner.jpg" alt=""></a>
+                </div>
+
+                <div class="notice">
+                    <div class="titles">
+                        <h2 class="active">공지사항</h2>
+                        <h2>갤러리</h2>
+                    </div>
+
+                    <ul class="notice_list item">
+                        <li><a href="#"><span>Lorem ipsum dolor sit amet.</span><span>2023.12.31</span></a></li>
+                        <li><a href="#"><span>Lorem ipsum dolor sit amet.</span><span>2023.12.31</span></a></li>
+                        <li><a href="#"><span>Lorem ipsum dolor sit amet.</span><span>2023.12.31</span></a></li>
+                        <li><a href="#"><span>Lorem ipsum dolor sit amet.</span><span>2023.12.31</span></a></li>
+                    </ul>
+
+                    <ul class="gallery_list item">
+                        <li><a href="#"><img src="./images/icon1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./images/icon2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./images/icon3.jpg" alt=""></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="f_logo">
+                <a href="#"><img src="./images/footerLogo.png" alt="#"></a>
+            </div>
+            <div class="copyright">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste laborum vero, non eaque pariatur iure totam aut consequatur? Officiis suscipit molestias atque labore fugit rerum. Atque voluptatibus rem exercitationem nobis.</p>
+            </div>
+            <div class="sns">
+                <h2>SNS</h2>
+            </div>
+        </div>
+
+
+    </div>
+    
+
+
+    <script>
+        $('.gnb > li').hover(function(){
+            $(this).find('ul').stop().slideDown()
+        },
+        function(){
+            $(this).find('ul').stop().slideUp()
+        }
+        )
+
+
+        // setInterval(function(){
+            
+        // })
+
+        $('.slide').eq(0).show()
+
+        var current = 0
+        
+
+        // console.log(next)
+        
+
+        setInterval(function(){
+
+            
+            var next = (current + 1) % $('.slide').length
+
+            console.log(current , next)
+
+            $('.slide').eq(current).fadeOut()
+            $('.slide').eq(next).fadeIn()
+
+            current = next
+
+        },2000)
+
+
+        $('.titles h2').click(function(){
+            $('.titles h2').removeClass('active')
+            $(this).addClass('active')
+
+            var idx = $(this).index()
+
+            $('.item').hide()
+            $('.item').eq(idx).show()
+
+
+        })
+
+    </script>
+
+</body>
+</html>

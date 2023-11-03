@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    /* display: block; */
+    /* width: 100%; */
+}
+
+body{
+    color: #222;
+    background-color: #fff;
+}
+
+
+
+/*  */
+
+.container{
+    display: flex;
+}
+
+.header{
+    width: 200px;
+}
+
+.logo img{
+    display: block;
+    width: 180px;
+    padding: 10px;
+}
+
+.gnb{
+    padding: 10px;
+}
+
+.gnb > li > a {
+    display: block;
+    padding: 20px 10px;
+}
+
+
+.gnb ul {
+    display: none;
+}
+
+
+/*  */
+
+.right{
+    width: calc(100% - 200px);
+}
+
+.slider{
+    height: 400px;
+}
+
+.slides {
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    display: none;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+
+
+/* banner */
+
+.banner{
+    height: 200px;
+    /* background-color: red; */
+}
+
+.banner img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    object-fit: cover;
+}
+
+
+/* notice */
+
+.item {
+    border: 1px solid #222;
+}
+
+.gallery_list{
+    display: none;
+    background-color: #eee;
+    margin: 0 10px;
+}
+
+.gallery_list li {
+    display: inline-block;
+    padding: 50px;
+
+}
+
+.notice{
+    height: 250px;
+    /* background-color: aquamarine; */
+}
+
+.notice .titles{
+    display: flex;
+    gap: 4px;
+    width: 404px;
+    margin-left: 30px;
+    border-bottom: 3px solid #222;
+}
+
+.notice h2{
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #eee;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.notice h2.active{
+    background-color: #222;
+    color: #fff;
+}
+
+.notice_list{
+    line-height: 3;
+    padding: 0 50px;
+    margin: 0 10px;
+    background-color: #eee;
+}
+
+.notice_list a{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    height: 100px;
+    display: flex;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.f_logo img{
+    width: 180px;
+    padding: 10px;
+}
+
+.copyright{
+    padding: 30px;
+}
+
+.sns{
+    padding: 30px;
+    font-size: 30px;
+}
+
+
+
+
+
